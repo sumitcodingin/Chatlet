@@ -2,12 +2,6 @@
 
 A sleek and modern chat application enabling users to send messages in real-time, built with the powerful MERN stack and enhanced with Socket.io for live interaction. Comes with a beautiful UI, secure authentication, and full deployment support.
 
-## 🔗 Live Demo
-
-
-
----
-
 ## 🚀 Features
 
 - 💻 **Full Stack Tech** – Built using MongoDB, Express, React, Node.js
@@ -29,10 +23,9 @@ A sleek and modern chat application enabling users to send messages in real-time
   
 Install dependencies
 
-bash
-Always show details
 
-Copy
+
+
 npm install
 cd client && npm install
 Setup Environment Variables
