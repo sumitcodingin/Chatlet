@@ -10,6 +10,6 @@ import {sendMessage} from "../controllers/message.controller.js";
 router.get("/users",protectRoute,getUsersForSidebar)
 router.get("/:id",protectRoute,getMessages)
 
-router.use("/send/:id",protectRoute,sendMessage)
+router.post("/send/:id",protectRoute,sendMessage)
 
 export default router;
