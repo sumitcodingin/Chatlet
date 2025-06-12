@@ -22,7 +22,7 @@ export const getMessages=async(req,res)=>{
     try{
         const {id:userToChatId}=req.params;
         const myId=req.user._id;
-        const messages=await Message.find({$or:[{senderId:myId,receiverId:userToChatId},{senderId:userToChatId,receiverId:myId}]}).sort({createdAt:-1});
+        const messages=await Message.find({$or:[{senderId:myId,receiverId:userToChatId},{senderId:userToChatId,receiverId:myId}]}).sort({createdAt:1});
         res.status(200).json(messages);
 
     }catch(error){
